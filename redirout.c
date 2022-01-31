@@ -15,10 +15,21 @@ int pip[2];
 pipe(pip);
 
 if(fork() == 0) {
-  dup2(pip[1],1)
+  dup2(pip[1],1);
   close(pip[0]);
 
   char *const *args = argv + 2;
   execvp(argv[2], args);
   exit(1);
+}
+
+close(pip[1]);
+char buf[2048];
+int c;
+
+while ((c = read(pip[0],buf, sizeof buf)) > 0){
+  write(opf,buf,c);
+}
+close(pip[0]);
+close(opf);
 }

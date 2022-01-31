@@ -1,0 +1,10 @@
+total 232
+drwxr-xr-x@  9 lucas  staff    288 Jan 30 23:00 .
+drwxr-xr-x@ 14 lucas  staff    448 Jan 30 23:00 ..
+drwxr-xr-x@ 14 lucas  staff    448 Jan 30 21:37 .git
+-rw-r--r--   1 lucas  staff    192 Jan 30 22:57 Makefile
+-rw-r--r--   1 lucas  staff      0 Jan 30 23:02 foo.txt
+-rwxr-xr-x   1 lucas  staff  49760 Jan 30 21:32 lswc
+-rw-r--r--   1 lucas  staff    311 Jan 30 21:32 lswc.c
+-rwxr-xr-x   1 lucas  staff  49936 Jan 30 22:58 redirout
+-rw-r--r--@  1 lucas  staff    535 Jan 30 22:58 redirout.c
